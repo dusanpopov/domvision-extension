@@ -19,7 +19,7 @@
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/domvision.git](https://github.com/your-username/domvision.git)
+    git clone [https://github.com/dusanpopov/domvision-extensiont](https://github.com/dusanpopov/domvision-extension)
     ```
 2.  **Install dependencies:**
     ```bash
