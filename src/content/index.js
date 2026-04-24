@@ -5,7 +5,7 @@ import { getImportantStyles, generateTooltipHTML } from "./domUtils.js";
 window.domVisionActive = window.domVisionActive || false;
 window.domVisionFrozen = false;
 let lastElement = null;
-let moveTicking = false; // Optimizacija za mousemove (Throttling)
+let moveTicking = false; // Mousemove optimizacija (Throttling)
 
 const initDOMVision = () => {
   if (document.getElementById(CONFIG.ROOT_ID)) return;
@@ -54,7 +54,7 @@ document.addEventListener("mouseover", (event) => {
 
   const targetElement = event.target;
 
-  // IFRAME PROVERA: Preskačemo iframe zbog CORS restrikcija
+  // IFRAME PROVERA: Preskače iframe zbog CORS restrikcija
   if (targetElement.tagName.toLowerCase() === "iframe") return;
 
   if (targetElement.closest(`#${CONFIG.ROOT_ID}`)) return;
